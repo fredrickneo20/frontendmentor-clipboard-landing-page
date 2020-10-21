@@ -1,0 +1,430 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    background: url('/images/bg-header-mobile.png') no-repeat;
+    background-size: contain;
+    max-height: 100%;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+p {
+    color: hsl(201, 11%, 66%);
+}
+header{
+    text-align: center;
+    margin: 120px 32px;
+}
+header h1{
+    margin-top: 72px;
+    margin-bottom: 24px;
+}
+header p{
+    line-height: 1.5em;
+    margin-bottom: 0;
+}
+.button-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 52px;
+}
+button{
+    width: 100%;
+    height: 56px;
+    font-family: inherit;
+    font-size: 18px;
+    margin-bottom: 26px;
+    border-radius: 50px;
+    border: none;
+    color: #fff;
+    padding: 0;
+    cursor: pointer;
+    box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.75);
+}
+.ios{
+    background-color: hsl(171, 66%, 44%);
+}
+.mac{
+    background-color: hsl(233, 100%, 69%);
+    margin-bottom: 0;
+}
+.container-1{
+    display: flex;
+    flex-direction: column;
+    height: 960px;
+    margin: 170px 30px 195px;
+    text-align: center;
+}
+.snippets{
+    width: 100%;
+    flex-wrap: wrap;
+}
+.snippets h2{
+    font-size: 30px;
+    margin: 0;
+}
+.snippets p{
+    margin-top: 24px;
+    margin-bottom: 0px;
+}
+.sub-snippets{
+    height: 240px;
+    margin-top: 68px;
+    display: flex;
+    flex-direction: column;
+}
+.screen-img img{
+    height: 240px;
+    width: 100%;
+}
+.subcontainer{
+    margin-top: 62px;
+    margin-bottom: 62px;
+}
+.subcontainer h3{
+    margin-top: 0px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+.clipboard, .workflow{
+    margin: 140px 32px;
+    text-align: center;
+}
+.clipboard h3{
+    font-size: 28px;
+    margin-bottom: 24px;
+}
+.clipboard p{
+    margin-bottom: 68px;
+}
+.clipboard img{
+    height: 180px;
+    width: 100%;
+}
+
+.workflow{
+    height: 885px;
+    display: flex;
+    flex-direction: column;
+}
+.workflow-description{
+    margin-bottom: 95px;
+}
+.workflow-description h3{
+    margin: 0px auto 24px;
+    font-size: 26px;
+}
+.workflow-description p,.workflow-feature p{
+    line-height: 1.5em;
+    margin-bottom: 0;
+    font-size: 13.5px;
+}
+.workflow-feature h3{
+    margin: 0px auto 30px;
+    font-size: 20px;
+}
+.feature{
+    margin-bottom: 60px;
+}
+.feature img{
+    margin-bottom: 52px;
+}
+
+.partners{
+    height: 375px;
+    width: 140px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+img.google{
+    height: 42px;
+    width: 140px;
+}
+img.microsoft{
+    height: 28px;
+    width: 135px;
+}
+img.ibm{
+    width: 115px;
+    height: 42px;
+}
+img.hp{
+    width: 115px;
+    height: 48px;
+}
+img.vector{
+    width: 105px;
+    height: 26px;
+}
+
+.download{
+    margin: 170px 32px;
+    text-align: center;
+}
+.download h2{
+    font-size: 26px;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+.download p{
+    font-size: 16px;
+    margin-top: 0;
+    line-height: 1.5em;
+    margin-bottom: 50px;
+}
+
+footer{
+    height: 500px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+footer img{
+    height: 55px;
+    margin-top: 50px;
+}
+nav{
+    margin: 50px auto 55px;
+}
+nav ul{
+    list-style-type: none;
+    padding: 0;
+}
+nav ul li{
+    cursor: pointer;
+    margin-bottom: 36px;
+    font-size: 15px;
+}
+.social-media img{
+    cursor: pointer;
+    height: 25px;
+    margin: 0;
+    padding-right: 40px;
+}
+.social-media img:last-child{
+    padding-right: 0;
+}
+@media screen and (min-width: 501px){
+    html{
+        background: url('/images/bg-header-desktop.png') no-repeat;
+        background-size: contain;
+    }
+    header{
+        max-width: 700px;
+        margin: 130px auto;
+        font-size: 20px;
+    }
+    header h1{
+        font-size: 44px;
+        font-weight: 600;
+    }
+    .button-container{
+        flex-direction: row;
+        max-width: 470px;
+        margin: 52px auto;
+        height: 56px;
+        justify-content: space-between;
+    }
+    button{
+        width: 225px;
+    }
+    .ios{
+        margin-right: 16px;
+    }
+    .container-1{
+        margin: 160px 0;
+        max-height: 795px;
+    }
+    .snippets{
+        max-width: 700px;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 18px;
+    }
+    .sub-snippets{
+        flex-direction: row;
+        height: 575px;
+        margin-top: 84px;
+    }
+    .screen-img{
+        align-self: center;
+    }
+    .screen-img img{
+        height: auto;
+        max-width: 755px;
+    }
+    .clipboard img{
+        height: auto;
+        max-width: 810px;
+    }
+    .clipboard h3{
+        font-size: 36px;
+    }
+    .clipboard p{
+        margin-bottom: 115px;
+        font-size: 20px;
+        line-height: 1.5em;
+    }
+    .clipboard{
+        margin: 160px 15vw;
+    }
+    .workflow-feature{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .feature img{
+        height: 42px;
+        margin-bottom: 45px;
+    }
+    .workflow{
+        margin: 170px auto;
+        height: 385px;
+        max-width: 1190px;
+    }
+    .feature{
+        max-width: 335px;
+    }
+    .workflow-description{
+        margin-bottom: 76px;
+    }
+    .workflow-description h3{
+        margin: 0px auto 30px;
+        font-size: 34px;
+    }
+    .workflow-description p{
+        font-size: 18px;
+    }
+    .workflow-feature p{
+        font-size: 15px;
+    }
+    .download{
+        max-width: 685px;
+        margin: 170px auto;
+    }
+    .download h2{
+        font-size: 36px;
+    }
+    .download p{
+        font-size: 18px;
+    }
+}
+@media screen and (min-width: 700px){
+    .partners{
+        margin: auto;
+        height: 56px;
+        width: 90vw;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .partners img{
+        max-width: 165px;
+    }
+    img.microsoft{
+        max-height: 36px;
+    }
+    img.ibm, img.hp{
+        max-width: 136px;
+    }
+    img.vector{
+        max-width: 125px;
+        max-height: 32px;
+    }
+    footer{
+        max-height: 350px;
+        position: relative;
+    }
+    footer img{
+        float: left;
+        margin-left: 15vw;
+        margin-right: 15vw;
+    }
+    nav ul{
+        float: left;
+        display: flex;
+        flex-direction: column;
+        margin-top: 45px;
+        margin-right: 15vw;
+    }
+    nav li {
+        text-align: left;
+    }
+    .social-media{
+        float: left;
+        margin-top: 62px;
+    }
+    .attribution{
+        float: left;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+}
+@media screen and (min-width: 1100px){
+    .partners{
+        width: 70vw;
+    }
+}
+@media screen and (min-width: 1440px){
+    header{
+        margin: 130px 375px;
+    }
+    .screen-img{
+        width: 50%;
+    }
+    .screen-img img{
+        transform: translateX(-35px);
+    }
+    .sub-description{
+        padding: 75px 270px 100px 110px ;
+        text-align: left;
+        width: 50%;
+    }
+    .subcontainer{
+        margin-top: 0px;
+        margin-bottom: 62px;
+    }
+    .subcontainer h3{
+        margin-top: 0px;
+        margin-bottom: 16px;
+        font-size: 20px;
+    }
+    .clipboard{
+        margin: 160px 315px;
+    }
+    .clipboard img{
+        height: 470px;
+        width: 810px;
+    }
+    .partners{
+        width: 1110px;
+        justify-content: space-between;
+    }
+    .download{
+        margin: 170px 380px;
+    }
+
+    footer{
+        max-height: 150px;
+    }
+    footer img{
+        margin-left: 165px;
+        margin-right: 135px;
+    }
+    nav ul{
+        flex-direction: row;
+        margin-right: 315px;
+    }
+    nav li {
+        margin-right: 100px;
+    }
+    nav li:first-child{
+        margin-bottom: 28px;
+    }
+}
